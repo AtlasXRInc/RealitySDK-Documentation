@@ -30,6 +30,7 @@
 **RealityEditor**  
 
 **Reality**  
+
 - [x] Advanced Game Mode Support
 - [ ] Interactable Support
 - [ ] Firearms Support
@@ -53,6 +54,7 @@
 
 ## 0.4
 **RealityEditor**  
+
 - [ ] Map mods can support external user-created GameMode mods
 - [ ] Add in-editor mod search
 - [ ] Project templates

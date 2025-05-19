@@ -34,7 +34,7 @@
 - [ ] Interactable Support
 - [ ] Firearms Support
 - [x] SDK API Tests
-- [ ] Software Occlusion Culling
+- [ ] Software Occlusion Culling  
 
 ## 0.3
 **RealityEditor**  
@@ -49,11 +49,11 @@
     * [ ] Skin mods
 - [ ] SDK API
     * [ ] GameAPI
-    * [ ] CombatAPI
+    * [ ] CombatAPI  
 
 ## 0.4
-**RealityEditor**
+**RealityEditor**  
 - [ ] Map mods can support external user-created GameMode mods
 - [ ] Add in-editor mod search
 - [ ] Project templates
-- [ ] Documentation
+- [ ] Documentation  

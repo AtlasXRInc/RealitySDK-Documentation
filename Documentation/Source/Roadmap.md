@@ -23,23 +23,18 @@
 - [x] **Mods type**
     * [x] GameMode mod
     * [x] Map mod
-- [ ] Final tests  
+- [x] Final tests  
 - [x] Setup distribution pipeline to modders
 
 ## 0.2
 **RealityEditor**  
 
-- [ ] Add in-editor mod search
-
 **Reality**  
-
-- [ ] Map mods can support modders GameMode mods
-- [ ] **Mods type**
-    * [ ] Libraries
-    * [ ] DataMod
-    * [ ] Object Mods
-- [ ] Weapons architecture
-- [ ] SDK API tests
+- [x] Advanced Game Mode Support
+- [ ] Interactable Support
+- [ ] Firearms Support
+- [x] SDK API Tests
+- [ ] Software Occlusion Culling
 
 ## 0.3
 **RealityEditor**  
@@ -56,9 +51,9 @@
     * [ ] GameAPI
     * [ ] CombatAPI
 
-
 ## 0.4
-**RealityEditor**  
-
+**RealityEditor**
+- [ ] Map mods can support external user-created GameMode mods
+- [ ] Add in-editor mod search
 - [ ] Project templates
 - [ ] Documentation

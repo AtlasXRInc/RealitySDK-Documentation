@@ -38,9 +38,8 @@
 - [x] Firearms Support
 - [x] SDK API Tests
 - [x] Software Occlusion Culling
-- [x] PCVR Distribution channel
-- [x] Unreality Distribution channel
-- [x] SDK API Tests
+- [x] PCVR Distribution
+- [x] Unreality Distribution
 - [ ] Final tests
 
 

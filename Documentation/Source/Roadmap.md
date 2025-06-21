@@ -34,10 +34,16 @@
 - [x] Object System
 - [x] Modpack System
 - [x] Advanced Game Mode Support
-- [ ] Interactable Support
-- [ ] Firearms Support
+- [x] Interactable Support
+- [x] Firearms Support
 - [x] SDK API Tests
-- [ ] Software Occlusion Culling  
+- [x] Software Occlusion Culling
+- [x] PCVR Distribution channel
+- [x] Unreality Distribution channel
+- [x] SDK API Tests
+- [ ] Final tests
+
+
 
 ## 0.3
 **RealityEditor**  

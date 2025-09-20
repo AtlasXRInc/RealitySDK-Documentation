@@ -55,7 +55,10 @@ theme:
 
   features:
     - content.code.copy
+    - navigation.previous_next
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.sections
     - navigation.expand
     - navigation.indexes
@@ -63,6 +66,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
+    - navigation.footer
 
     - toc.integrate
     - toc.follow

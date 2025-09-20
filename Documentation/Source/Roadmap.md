@@ -47,7 +47,7 @@
 ## 0.3
 **RealityEditor**  
 
-- [ ] QoL improvement  
+- [x] QoL improvement  
 
 **Reality**  
 

@@ -49,9 +49,9 @@ theme:
     annotation: material/information-outline
 
   palette:
-      scheme: blue grey
+      scheme: black
       primary: black
-      accent: blue grey
+      accent: black
 
   features:
     - content.code.copy

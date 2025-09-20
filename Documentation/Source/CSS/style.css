@@ -15,3 +15,40 @@ em {
     float:left;
     margin-right: 8px;
 }
+
+.md-tabs {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.md-header {
+  background-color: #282828 !important;
+}
+
+/* Override menu/tabs bar (if used) */
+.md-tabs {
+  background-color: #282828 !important;
+}
+
+.md-content img {
+  border-radius: 12px;          /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);  /* Soft shadow */
+  max-width: 100%;              /* Responsive */
+  height: auto;
+}
+
+.md-content img:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.md-nav__link {
+    font-size: 0.8rem;
+}
+
+/* Sidebar category headers */
+.md-nav__item--section > .md-nav__link:first-of-type {
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+

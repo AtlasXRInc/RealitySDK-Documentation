@@ -6,13 +6,32 @@ site_url: https://reality.beyondsandbox.com/
 site_author: AtlasXR
 
 nav:
-  # - Home: 'index.md'
+  - Home: 'index.md'
   - Documentation:
-    - 'Prerequisites': 'Documentation/Prerequisites.md'
-    - 'Create Mod': 'Documentation/CreateMod.md'
-    - 'Test Mod': 'Documentation/TestMod.md'
+    - Interactable:
+      - Overview: 'Documentation/Interactable/Overview.md'
+      - Create Interactable: 'Documentation/Interactable/CreateInteractable.md'
+      - Sharp Area Component: 'Documentation/Interactable/SharpArea.md'
+      - Create Firearm: 'Documentation/Interactable/CreateFirearm.md'
+    - Gamemode:
+      - Overview: 'Documentation/Gamemode/Overview.md'
+      - Create Gamemode: 'Documentation/Gamemode/CreateGamemode.md'
+    - Feature:
+      - Overview: 'Documentation/Feature/Overview.md'
+      - Loadout: 'Documentation/Feature/Loadout.md'
+      - Class: 'Documentation/Feature/Class.md'
+    - Level:
+      - Overview: 'Documentation/Level/Overview.md'
+      - Create Level: 'Documentation/Level/CreateLevel.md'
+
+
+
+  #  - 'Prerequisites': 'Documentation/Prerequisites.md'
+    # - 'Create Mod': 'Documentation/CreateMod.md'
+  #  - 'Test Mod': 'Documentation/TestMod.md'
+  #  - 'Create Level': 'Documentation/CreateMap.md'
   # - API: 'API.md'
-  - Roadmap: 'Roadmap.md'
+  # - Roadmap: 'Roadmap.md'
   # - Download: 'Download.md'
 
 theme:
@@ -20,6 +39,9 @@ theme:
   name: material
   logo: Data/Logo.png
   favicon: Data/Logo.png
+  font:
+    text: Inter
+    code: Roboto Mono
 
   icon:
     previous: fontawesome/solid/angle-left
@@ -27,12 +49,14 @@ theme:
     annotation: material/information-outline
 
   palette:
-    - scheme: slate
+      scheme: blue grey
       primary: black
-      accent: deep orange
+      accent: blue grey
 
   features:
     - content.code.copy
+    - navigation.instant
+    - navigation.sections
     - navigation.expand
     - navigation.indexes
     - navigation.path
@@ -44,6 +68,7 @@ theme:
     - toc.follow
     - search.suggest
     - search.highlight
+    - content.code.copy
 
 copyright: Copyright &copy; 2025 AtlasXR
 

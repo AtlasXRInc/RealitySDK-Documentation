@@ -7,6 +7,7 @@ site_author: AtlasXR
 
 nav:
   - Home: 'index.md'
+  - Getting Started: 'Documentation/GettingStarted.md'
   - Documentation:
     - Interactable:
       - Overview: 'Documentation/Interactable/Overview.md'

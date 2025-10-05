@@ -47,9 +47,9 @@ Once installed, **run `Unreality.exe` at least once** to complete the setup.
 2. In the Unreal Project Browser:
 
     - Select **Blank Project**
-    - Blueprint project
-    - Scalable quality
+    - Blueprint project (not C++)
     - Target platform: **Mobile**
+    - Quality Preset: **Scalable**
 
 3. Click **Create** to make a new project.
 

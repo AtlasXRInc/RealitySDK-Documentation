@@ -43,7 +43,7 @@ Once installed, **run `Unreality.exe` at least once** to complete the setup.
 
 ### If You Don’t Have a Modkit Unreal Project Yet
 
-1. **Open Unreality**. TODO: How? More explicit
+1. **Open Unreality**. It will take few minutes to compile the first time you open it. TODO: How? More explicit
 2. In the Unreal Project Browser:
 
     - Select **Blank Project**

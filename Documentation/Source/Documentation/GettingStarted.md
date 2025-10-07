@@ -1,12 +1,12 @@
 # How to Get The Reality SDK (Beyond Sandbox Modkit)
 
-- Download the modkit installer (RealityStandalone.zip): [https://github.com/AtlasXRInc/RealitySDK-dev/releases/tag/RealityStandalone](https://github.com/AtlasXRInc/RealitySDK-dev/releases/tag/RealityStandalone)  
+- Download the Reality modkit installer (RealityInstaller.zip): [https://github.com/AtlasXRInc/RealitySDK-dev/releases/tag/RealityInstaller](https://github.com/AtlasXRInc/RealitySDK-dev/releases/tag/RealityInstaller)  
 - Unzip it in the folder where you want to install Unreality (our fork of Unreal).  
-  - It’s recommended to unzip it at the root directory (C:\RealityStandalone) to avoid issues with long file paths.
+  - It’s recommended to unzip it at the root directory (C:\RealityInstaller) to avoid issues with long file paths.
 - Open PowerShell as Administrator and navigate to the extracted directory:
 
   ```powershell
-  cd path\to\RealityStandalone
+  cd path\to\RealityInstaller
   ```
 
 * Run the installer:
@@ -16,17 +16,16 @@
   ```
 !!!warning
 
-    This requires **at least 52 GB of free space**.
+    This requires **at least 55 GB of free space**.
 
 * The installer sets up:
 
-    * Meta’s **Unreality Engine** fork
-    * The **Reality plugin**
-    * ADB
-    * Java
+    * Atlas XR’s **Unreality Engine** fork
+    * The **Reality Modkit plugin**
+    * ADB & Java (Used to build and sideload your mods to Quest)
 
 
-Once installed, **run `Unreality.exe` at least once** to complete the setup.
+Once installed, at thhe root of your installation folder, **run `Launch Unreal Editor.exe` at least once** to complete the setup.
 
 ---
 
@@ -34,7 +33,7 @@ Once installed, **run `Unreality.exe` at least once** to complete the setup.
 
 * **Unreality** is Atlas XR and Meta’s fork of Unreal Engine, optimized for VR.
   It’s updated rarely and is the base engine you’ll build on.
-* **Reality** is a plugin on top of Unreality.
+* **Reality** is the modkit.
   It’s updated frequently and contains the SDK tools you’ll use when creating mods.
 
 ---
@@ -43,7 +42,7 @@ Once installed, **run `Unreality.exe` at least once** to complete the setup.
 
 ### If You Don’t Have a Modkit Unreal Project Yet
 
-1. **Open Unreality**. It will take few minutes to compile the first time you open it. TODO: How? More explicit
+1. **Open Unreality**. It will take few minutes to compile the first time you open it.
 2. In the Unreal Project Browser:
 
     - Select **Blank Project**

@@ -6,7 +6,7 @@ site_url: https://reality.beyondsandbox.com/
 site_author: AtlasXR
 
 nav:
-  - Home: 'index.md'
+  - Home: 'Documentation/Roadmap.md'
   - Documentation:
     - Interactable:
       - Overview: 'Documentation/Interactable/Overview.md'

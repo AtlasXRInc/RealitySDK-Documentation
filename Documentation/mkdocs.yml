@@ -1,11 +1,13 @@
 ﻿docs_dir: Source
 
-site_name: Reality SDK [0.1]
+site_name: Reality SDK [0.3]
 site_dir: Output
 site_url: https://reality.beyondsandbox.com/
 site_author: AtlasXR
 
 nav:
+  - Home: 'index.md'
+  - Getting Started: 'Documentation/GettingStarted.md'
   - Home: 'Documentation/Roadmap.md'
   - Documentation:
     - Interactable:

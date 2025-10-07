@@ -1,102 +1,231 @@
-﻿body {
-    background-color: #1a1a1a;  /* black background */
+﻿/* ------------------------------
+   Material for MkDocs — Dark Theme Polish
+   ------------------------------ */
+
+/* Use the Material color-scheme hook (dark) */
+:root,
+[data-md-color-scheme="slate"] {
+  /* Core palette */
+  --bg-0: #0f1115;
+  --bg-1: #14151a;     /* page well */
+  --bg-2: #1b1e26;     /* cards / code */
+  --txt-0: #e7e7e7;    /* body text */
+  --txt-1: #cbd5e1;    /* secondary */
+  --muted: #9aa4b2;
+  --brand: #1e90ff;    /* dodgerblue */
+  --brand-2: #0a6ad9;
+  --accent: #1c3f5d;   /* for subtle tints */
+  --link: var(--brand);
+  --link-hover: #7fb6ff;
+
+  /* Shadows / radii */
+  --radius: 12px;
+  --shadow-1: 0 4px 12px rgba(0,0,0,.25);
+  --shadow-2: 0 8px 20px rgba(0,0,0,.35);
+
+  /* Apply to Material custom properties where helpful */
+  --md-default-bg-color: var(--bg-0);
+  --md-default-fg-color: var(--txt-0);
+  --md-default-fg-color--light: var(--txt-1);
+  --md-primary-fg-color: var(--brand);
+  --md-accent-fg-color: var(--brand);
+
+  /* Code + inline */
+  --code-bg: #0c0f14;
+  --code-border: #1c2230;
+  --code-inline-bg: rgba(30,144,255,.12);
+  --code-inline-fg: #d5e7ff;
 }
 
-.md-main {
-    background-color: #14151A;  /* black background */
+/* Base surfaces */
+body { background-color: var(--bg-0); }
 
-}
+.md-main { background-color: var(--bg-1); }
 
-/* Target the logo image in the header */
-.md-header__button.md-logo img {
-    height: 2rem;   /* adjust height as needed */
-}
-
-h1 {
-    color: white !important;
-}
-
-h2 {
-    color: dodgerblue;
-}
-
-.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link{
-    background: none;
-        color: aliceblue;
-
-    box-shadow: none;
-}
-
-strong {
-    color: dodgerblue;
-}
-
-em {
-    color: lightslategrey;
-}
-
-p {
-        color: rgb(228, 228, 228);
-
-}
-
-.md-annotation .md-tooltip img {
-    width: 80px;
-    float:left;
-    margin-right: 8px;
-}
-
-.md-tabs {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
-  background: linear-gradient(
-        to right,      /* horizontal gradient */
-        #1a1a1a,       /* very dark grey */
-        #033656        /* very dark blue/grey */
-    );
-}
-
-.md-header {
-  background: linear-gradient(
-        to right,      /* horizontal gradient */
-        #1a1a1a,       /* very dark grey */
-        #033656        /* very dark blue/grey */
-    );
-}
-
-/* Override menu/tabs bar (if used) */
-.md-tabs {
-  background-color: #282828 !important;
-}
-
-.md-content img {
-  border-radius: 12px;          /* Rounded corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);  /* Soft shadow */
-  max-width: 100%;              /* Responsive */
-  height: auto;
-}
-
-.md-content img:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
-.md-nav__link {
-    font-size: 0.7rem;
-    color: aliceblue;
-}
-
-/* Sidebar category headers */
-.md-nav__item--section > .md-nav__link:first-of-type {
-  font-size: 0.9rem;
-  margin-top: 50px;
-  color: aliceblue;
-}
-
+/* Header + tabs + footer gradient */
+.md-header,
+.md-tabs,
 .md-footer {
-    background: linear-gradient(
-        to right,      /* horizontal gradient */
-        #1a1a1a,       /* very dark grey */
-        #033656        /* very dark blue/grey */
-    );
+  background: linear-gradient(to right, #1a1a1a, #033656);
+  box-shadow: var(--shadow-1);
 }
+
+/* Optional: unify tabs bar if you use it */
+.md-tabs { background-color: transparent !important; }
+
+/* Logo sizing */
+.md-header__button.md-logo img { height: 2rem; }
+
+/* Headings */
+h1 { color: #fff !important; letter-spacing: .2px; }
+h2 { color: var(--brand); }
+h3, h4 { color: var(--txt-0); }
+
+/* Emphasis */
+strong { color: var(--brand); font-weight: 700; }
+em { color: lightslategray; }
+
+/* Body text / paragraphs */
+p { color: var(--txt-0); line-height: 1.75; }
+
+/* Links */
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { color: var(--link-hover); }
+
+/* Navigation (sidebar) */
+.md-nav__link {
+  font-size: .8rem;
+  color: aliceblue;
+  border-radius: 8px;
+}
+.md-nav__link:hover,
+.md-nav__link:focus {
+  background: rgba(30,144,255,.08);
+  color: #fff;
+}
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  background: none;
+  color: aliceblue;
+  box-shadow: none;
+}
+
+/* Sidebar section headers */
+.md-nav__item--section > .md-nav__link:first-of-type {
+  font-size: .95rem;
+  margin-top: 36px;
+  color: aliceblue;
+  opacity: .9;
+}
+
+/* Content cards (markdown sections) */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+/* Admonitions: tune colors for dark */
+.md-typeset .admonition.note   { border-left-color: var(--brand); }
+.md-typeset .admonition.tip    { border-left-color: #34d399; }
+.md-typeset .admonition.warning{ border-left-color: #f59e0b; }
+.md-typeset .admonition.danger { border-left-color: #ef4444; }
+
+/* Code blocks */
+.md-typeset pre > code {
+  background: var(--code-bg) !important;
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+.md-typeset code {
+  background: var(--code-inline-bg);
+  color: var(--code-inline-fg);
+  padding: .15rem .35rem;
+  border-radius: 6px;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  background: var(--bg-2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  border-color: #283041;
+}
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(255,255,255,.02);
+}
+
+/* Images */
+.md-content img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  max-width: 100%;
+  height: auto;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.md-content img:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: var(--shadow-2);
+}
+
+/* Tooltips with images */
+.md-annotation .md-tooltip img {
+  width: 80px;
+  float: left;
+  margin-right: 8px;
+  border-radius: 6px;
+}
+
+/* Cards (e.g., search results) */
+.md-search-result__item { border-radius: 10px; }
+
+/* Search input */
+.md-search__input {
+  background: #0f141d;
+  border: 1px solid #1f2a3a;
+  border-radius: 10px;
+}
+.md-search__input:hover,
+.md-search__input:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(30,144,255,.2);
+}
+
+/* Buttons (copy, etc.) */
+.md-clipboard,
+.md-button {
+  border-radius: 8px !important;
+}
+
+/* Footer text contrast */
+.md-footer,
+.md-footer-meta { color: var(--txt-1); }
+
+/* Horizontal rules */
+.md-typeset hr { border-color: #2a3344; }
+
+/* Details/summary (collapsibles) */
+.md-typeset details {
+  background: var(--bg-2);
+  border: 1px solid #243042;
+}
+.md-typeset details > summary {
+  color: var(--txt-0);
+}
+
+/* Scrollbars (Chromium/Edge/Firefox) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a4a62 #0c0f14;
+}
+::-webkit-scrollbar { height: 10px; width: 10px; }
+::-webkit-scrollbar-track { background: #0c0f14; }
+::-webkit-scrollbar-thumb {
+  background: #3a4a62;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover { background: #4b6386; }
+
+/* Focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid rgba(30,144,255,.65);
+  outline-offset: 2px;
+}
+
+/* Optional: card-like content container */
+.md-content__inner {
+  background: transparent;
+}
+
+/* Keep your original footer gradient */
+.md-footer {
+  background: linear-gradient(to right, #1a1a1a, #033656);
+}
+
+/* --- Keep your original special cases intact --- */
+h1 { color: #fff !important; }
+h2 { color: var(--brand); }

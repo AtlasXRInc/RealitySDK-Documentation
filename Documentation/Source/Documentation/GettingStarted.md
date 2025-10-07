@@ -25,7 +25,7 @@
     * ADB & Java (Used to build and sideload your mods to Quest)
 
 
-Once installed, at thhe root of your installation folder, **run `Launch Unreal Editor.exe` at least once** to complete the setup.
+Once installed, at the root of your installation folder, **run `Launch Unreal Editor.exe` at least once** to complete the setup.
 
 ---
 

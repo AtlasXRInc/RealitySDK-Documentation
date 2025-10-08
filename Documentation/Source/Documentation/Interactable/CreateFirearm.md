@@ -15,6 +15,16 @@ Once created, you can customize the firearm’s appearance, behavior, and mechan
 
 ---
 
+## Converting an Existing Firearm to a Reality Interactable
+
+If you already have an actor and want to make it interactable:
+
+1. Open the existing firearm’s **Blueprint**.  
+2. In the **top ribbon**, click **Class Settings**.  
+3. In the **Details Panel**, set the **Parent Class** to `Reality Firearm`.
+
+---
+
 ## Viewing Example Firearms
 
 To explore example Reality Firearm blueprints:
@@ -30,3 +40,24 @@ You’ll find example blueprints such as:
 - `RealityFirearmDoubleBarrelSawedOff_Example`
 
 These are great references to understand weapon setup, components, and functionality.
+
+---
+
+## Placement in Mod Folder
+
+When you create a mod, a folder named **`ModName Content`** is automatically generated in the **Plugins** folder.
+
+> Make sure your **Reality Firearm** (and all dependencies i.e meshes, textures, animations) are saved inside this folder, or it will **not be packaged** with your mod.
+
+---
+
+## Scaling Interactables
+!!! warning
+    Do not scale the Root Component directly. Changing the root component’s scale causes physics issues.
+    !!! note
+        The **Root Component** is the top component in the Components hierarchy when a Blueprint is open.
+
+Instead, use the UE5 Editor tools to adjust the size of your mesh:
+
+- **Remodel** or **reimport** the mesh at the correct scale.  
+- Alternatively, use the **Static Mesh Editor** to adjust its import scale.

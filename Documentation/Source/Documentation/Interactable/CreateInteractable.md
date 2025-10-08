@@ -53,7 +53,7 @@ These can be great references for setup and best practices.
 
 When you create a mod, a folder named **`ModName Content`** is automatically generated in the **Plugins** folder.
 
-> **Make sure your Reality Interactable actor is saved inside this folder**, or it will **not be packaged** with your mod.
+> Make sure your **Reality Interactable actor** (and all dependencies i.e meshes, textures, animations) are saved inside this folder, or it will **not be packaged** with your mod.
 
 ---
 

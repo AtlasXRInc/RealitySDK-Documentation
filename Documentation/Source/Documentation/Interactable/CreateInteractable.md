@@ -38,7 +38,7 @@ To explore example Reality Interactable blueprints:
 1. Open the **Content Browser**.  
 2. Click **Settings** (top right).  
 3. Enable **Show Engine Content**.  
-4. In the **Engine directory**, search for `realityinteractable`.
+4. In the **Engine directory**, search for `RealityInteractable`.
 
 You’ll find blueprints such as:
 

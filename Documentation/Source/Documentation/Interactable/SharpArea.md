@@ -43,7 +43,7 @@ The following tables list all available variables for the **Sharp Area Component
 | **Minimum Penetration** | Minimum distance required to count as a valid stab. |
 | **Maximum Penetration** | Maximum distance the blade can penetrate. |
 | **Stab Force Threshold** | Offset applied to the base stab force threshold. Negative requires less force to stab; positive requires more. |
-| **Can Be Pushed Deeper** | Toggle on to allow the blade to be pushed deeper into the wound. |
+| **Can Be Pushed Deeper** | Toggle on to allow the blade to be pushed deeper into the wound. When Can Be Pushed Deeper is disabled, the stab depth is calculated on the first collision frame and remains fixed at that depth. When enabled, the blade can continue to be pushed deeper into the target up to the Maximum Penetration distance after the initial stab.|
 | **Can Twist** | Enables twisting of the blade after penetration. |
 | **Twist Limit** | How far twisting is allowed (in degrees or custom units). |
 | **Can Swing** | Whether the blade can swing from this area. |

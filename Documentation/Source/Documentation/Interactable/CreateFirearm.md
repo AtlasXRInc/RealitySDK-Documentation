@@ -13,15 +13,7 @@ This class includes all the necessary functionality for handling VR weapon inter
 
 Once created, you can customize the firearm’s appearance, behavior, and mechanics by modifying the blueprint.
 
----
-
-## Converting an Existing Firearm to a Reality Interactable
-
-If you already have an actor and want to make it interactable:
-
-1. Open the existing firearm’s **Blueprint**.  
-2. In the **top ribbon**, click **Class Settings**.  
-3. In the **Details Panel**, set the **Parent Class** to `Reality Firearm`.
+<!-- TODO Explain the firing system, chambering system and feeding system + API  -->
 
 ---
 
@@ -53,9 +45,7 @@ When you create a mod, a folder named **`ModName Content`** is automatically gen
 
 ## Scaling Interactables
 !!! warning
-    Do not scale the Root Component directly. Changing the root component’s scale causes physics issues.
-    !!! note
-        The **Root Component** is the top component in the Components hierarchy when a Blueprint is open.
+    Do not scale the Root Component directly. Changing the root component’s scale causes physics issues. (The **Root Component** is the top component in the Components hierarchy when a Blueprint is open)
 
 Instead, use the UE5 Editor tools to adjust the size of your mesh:
 

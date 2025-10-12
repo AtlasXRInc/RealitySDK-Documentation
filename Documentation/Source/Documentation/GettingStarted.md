@@ -83,3 +83,10 @@ Once your project is set up:
 
 1. In the Unreal Editor, open the **Reality** dropdown (top menu bar).
 2. Select **New Mod**.
+
+<!-- 
+TODO
+Add correct project settings android sdk
+Add about getting Quest in dev mode
+
+-->

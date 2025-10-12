@@ -1,9 +1,3 @@
-# Create Interactables
-
-A **Reality Interactable** is any physical object that players can interact with through their VR hands or pawn — such as weapons, doors, and other interactive props. This system enables objects to behave physically and deal damage appropriately (e.g., smashing a chair on someone’s head will cause damage).
-
----
-
 ## Creating a Reality Interactable Actor
 
 1. **Right-click** in the **Content Browser**.  
@@ -59,9 +53,7 @@ When you create a mod, a folder named **`ModName Content`** is automatically gen
 
 ## Scaling Interactables
 !!! warning
-    Do not scale the Root Component directly. Changing the root component’s scale causes physics issues.
-    !!! note
-        The **Root Component** is the top component in the Components hierarchy when a Blueprint is open.
+    Do not scale the Root Component directly. Changing the root component’s scale causes physics issues. (The **Root Component** is the top component in the Components hierarchy when a Blueprint is open)
 
 Instead, use the UE5 Editor tools to adjust the size of your mesh:
 

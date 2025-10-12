@@ -52,6 +52,10 @@ Once installed, at the root of your installation folder, **run `Launch Unreal Ed
 
 3. Click **Create** to make a new project.
 
+!!! warning
+
+    Make sure all parent folder names along the path to the project directory do not have any spaces.
+
 !!! note
 
     You may see a popup regarding Shader Model 6.
@@ -69,10 +73,7 @@ Once installed, at the root of your installation folder, **run `Launch Unreal Ed
 ---
 
 ### If You Already Have a Modkit Project
-
-1. Delete the old **Reality SDK 0.1/.2** plugin.
-2. Make sure you are using the correct Unreal version. Right-click your `.uproject` file → **Switch Unreal Engine version** → select the path to **Unreality**.
-3. Replace the config files with the new Reality config files.
+Make sure you are using the correct Unreal version. Right-click your `.uproject` file → **Switch Unreal Engine version** → select the path to **Unreality**.
 
 ---
 

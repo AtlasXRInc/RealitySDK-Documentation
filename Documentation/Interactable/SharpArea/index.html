@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#adding-a-sharp-area-component-to-a-blueprint" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -557,6 +562,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Sharp Area Component
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -568,6 +586,83 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-sharp-area-component-to-a-blueprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Sharp Area Component to a Blueprint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stabbing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stabbing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slashing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positioning-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positioning Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-machete-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Machete Setup
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -977,7 +1072,132 @@
 
 
 
-<h1 id="sharp-area-component">Sharp Area Component<a class="headerlink" href="#sharp-area-component" title="Permanent link">¶</a></h1>
+<div><h1 id="sharp-area-component">Sharp Area Component<a class="headerlink" href="#sharp-area-component" title="Permanent link">¶</a></h1>
+<p>The <strong>Sharp Area Component</strong> is a box collider component that enables <strong>stabbing</strong> and <strong>slashing</strong> interactions in your project.<br>
+It can be used to create functional <strong>spikes</strong>, <strong>traps</strong>, <strong>bayonets</strong>, or <strong>bladed weapons</strong>.</p>
+<p>You can choose to enable <strong>stabbing</strong>, <strong>slashing</strong>, or both — depending on the behavior you want.</p>
+<hr>
+<h2 id="adding-a-sharp-area-component-to-a-blueprint">Adding a Sharp Area Component to a Blueprint<a class="headerlink" href="#adding-a-sharp-area-component-to-a-blueprint" title="Permanent link">¶</a></h2>
+<ol>
+<li>In the <strong>Components</strong> tab of your Blueprint, click <strong>Add</strong>.  </li>
+<li>Search for <strong>Reality Sharp Area</strong> and select it.  </li>
+<li>Position the component and <strong>align its scale and rotation</strong> with the sharp area on the Blueprint you are working with.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong><br>
+Sometimes you may need more than one Sharp Area Component to accurately simulate your weapon.<br>
+For example, a katana may use one Sharp Area for the <strong>tip</strong> (stabbing) and another for the <strong>blade</strong> (slashing).</p>
+</blockquote>
+<p>You can align the <strong>stab axis</strong> and <strong>slash axis</strong> either by:</p>
+<ul>
+<li>Changing the corresponding variable in the dropdown, or</li>
+<li>Rotating the entire component in the editor.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For complex weapons like a rake, <strong>adding a Sharp Area Component to every spike is not recommended</strong>, as this may negatively impact performance.</p>
+</div>
+<hr>
+<h2 id="variable-reference">Variable Reference<a class="headerlink" href="#variable-reference" title="Permanent link">¶</a></h2>
+<p>The following tables list all available variables for the <strong>Sharp Area Component</strong>, separated into <em>Stabbing</em> and <em>Slashing</em> settings.</p>
+<h3 id="stabbing">Stabbing<a class="headerlink" href="#stabbing" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Can Stab</strong></td>
+<td>Enables stabbing behavior for this sharp area.</td>
+</tr>
+<tr>
+<td><strong>Stab Axis</strong></td>
+<td>Axis aligned with the normal direction of the tip.</td>
+</tr>
+<tr>
+<td><strong>Position Strength</strong></td>
+<td>TODO</td>
+</tr>
+<tr>
+<td><strong>Velocity Strength</strong></td>
+<td>TODO</td>
+</tr>
+<tr>
+<td><strong>Minimum Penetration</strong></td>
+<td>Minimum distance required to count as a valid stab.</td>
+</tr>
+<tr>
+<td><strong>Maximum Penetration</strong></td>
+<td>Maximum distance the blade can penetrate.</td>
+</tr>
+<tr>
+<td><strong>Stab Force Threshold</strong></td>
+<td>Offset applied to the base stab force threshold. Negative requires less force to stab; positive requires more.</td>
+</tr>
+<tr>
+<td><strong>Can Be Pushed Deeper</strong></td>
+<td>Toggle on to allow the blade to be pushed deeper into the wound. When Can Be Pushed Deeper is disabled, the stab depth is calculated on the first collision frame and remains fixed at that depth. When enabled, the blade can continue to be pushed deeper into the target up to the Maximum Penetration distance after the initial stab.</td>
+</tr>
+<tr>
+<td><strong>Can Twist</strong></td>
+<td>Enables twisting of the blade after penetration.</td>
+</tr>
+<tr>
+<td><strong>Twist Limit</strong></td>
+<td>How far twisting is allowed (in degrees or custom units).</td>
+</tr>
+<tr>
+<td><strong>Can Swing</strong></td>
+<td>Whether the blade can swing from this area.</td>
+</tr>
+<tr>
+<td><strong>Swing Limit</strong></td>
+<td>How far the blade can swing (in degrees or custom units).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="slashing">Slashing<a class="headerlink" href="#slashing" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Can Slash</strong></td>
+<td>Enables slashing behavior for this sharp area.</td>
+</tr>
+<tr>
+<td><strong>Slash Force Threshold</strong></td>
+<td>Offset applied to the base slash force threshold. Negative requires less force to slash; positive requires more.</td>
+</tr>
+<tr>
+<td><strong>Slash Axis</strong></td>
+<td>Axis that runs along the blade for slashing direction.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="positioning-notes">Positioning Notes<a class="headerlink" href="#positioning-notes" title="Permanent link">¶</a></h2>
+<ul>
+<li>It's <strong>okay for Sharp Area Components to overlap slightly</strong>. Overlaps will not cause any issues in detection or interaction.</li>
+<li>Make sure each Sharp Area’s scale and axis orientation match the physical shape and intended interaction area of the weapon.</li>
+</ul>
+<hr>
+<h2 id="example-machete-setup">Example: Machete Setup<a class="headerlink" href="#example-machete-setup" title="Permanent link">¶</a></h2>
+<p>To see a working example of a Sharp Area Component:</p>
+<ol>
+<li>Open your <strong>Content Browser</strong>.</li>
+<li>In the top right, click <strong>Settings</strong> → enable <strong>Show Engine Content</strong>.</li>
+<li>In the <strong>Engine</strong> directory, search for <code>RealityFirearm</code>.</li>
+<li>Open the Blueprint called <strong><code>RealityInteractable_Machete</code></strong>.</li>
+</ol>
+<p>This Blueprint demonstrates how Sharp Area Components are positioned and configured for both <strong>stabbing</strong> and <strong>slashing</strong> on a single weapon.</p></div>
 
 
 

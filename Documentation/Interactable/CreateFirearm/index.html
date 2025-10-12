@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#creating-a-reality-firearm-actor" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -580,6 +585,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Create Firearm
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -591,6 +609,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-reality-firearm-actor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Reality Firearm Actor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-example-firearms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Example Firearms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-mod-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Placement in Mod Folder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scaling-interactables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scaling Interactables
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -977,7 +1048,52 @@
 
 
 
-<h1 id="create-firearms">Create Firearms<a class="headerlink" href="#create-firearms" title="Permanent link">¶</a></h1>
+<div><h1 id="create-firearms">Create Firearms<a class="headerlink" href="#create-firearms" title="Permanent link">¶</a></h1>
+<p>A <strong>Reality Firearm</strong> is a specialized <strong>child class</strong> of <a href="./reality-interactable.md">Reality Interactable</a> designed specifically for creating firearms in your mods.<br>
+This class includes all the necessary functionality for handling VR weapon interactions, such as grabbing, aiming, firing, and physical collision.</p>
+<hr>
+<h2 id="creating-a-reality-firearm-actor">Creating a Reality Firearm Actor<a class="headerlink" href="#creating-a-reality-firearm-actor" title="Permanent link">¶</a></h2>
+<ol>
+<li><strong>Right-click</strong> in the <strong>Content Browser</strong>.  </li>
+<li>Select <strong>Create Blueprint Class</strong>.  </li>
+<li>Search for <strong>Reality Firearm</strong>.  </li>
+<li>Choose it as the <strong>parent class</strong> for your new blueprint.</li>
+</ol>
+<p>Once created, you can customize the firearm’s appearance, behavior, and mechanics by modifying the blueprint.</p>
+<!-- TODO Explain the firing system, chambering system and feeding system + API  -->
+
+<hr>
+<h2 id="viewing-example-firearms">Viewing Example Firearms<a class="headerlink" href="#viewing-example-firearms" title="Permanent link">¶</a></h2>
+<p>To explore example Reality Firearm blueprints:</p>
+<ol>
+<li>Open the <strong>Content Browser</strong>.  </li>
+<li>Click <strong>Settings</strong> (top right).  </li>
+<li>Enable <strong>Show Engine Content</strong>.  </li>
+<li>In the <strong>Engine directory</strong>, search for <code>RealityFirearm</code>.</li>
+</ol>
+<p>You’ll find example blueprints such as:</p>
+<ul>
+<li><code>RealityFirearm_AK47_Example</code>  </li>
+<li><code>RealityFirearmDoubleBarrelSawedOff_Example</code></li>
+</ul>
+<p>These are great references to understand weapon setup, components, and functionality.</p>
+<hr>
+<h2 id="placement-in-mod-folder">Placement in Mod Folder<a class="headerlink" href="#placement-in-mod-folder" title="Permanent link">¶</a></h2>
+<p>When you create a mod, a folder named <strong><code>ModName Content</code></strong> is automatically generated in the <strong>Plugins</strong> folder.</p>
+<blockquote>
+<p>Make sure your <strong>Reality Firearm</strong> (and all dependencies i.e meshes, textures, animations) are saved inside this folder, or it will <strong>not be packaged</strong> with your mod.</p>
+</blockquote>
+<hr>
+<h2 id="scaling-interactables">Scaling Interactables<a class="headerlink" href="#scaling-interactables" title="Permanent link">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not scale the Root Component directly. Changing the root component’s scale causes physics issues. (The <strong>Root Component</strong> is the top component in the Components hierarchy when a Blueprint is open)</p>
+</div>
+<p>Instead, use the UE5 Editor tools to adjust the size of your mesh:</p>
+<ul>
+<li><strong>Remodel</strong> or <strong>reimport</strong> the mesh at the correct scale.  </li>
+<li>Alternatively, use the <strong>Static Mesh Editor</strong> to adjust its import scale.</li>
+</ul></div>
 
 
 

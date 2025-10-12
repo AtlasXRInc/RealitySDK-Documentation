@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#creating-a-reality-interactable-actor" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -534,6 +539,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Create Interactable
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -545,6 +563,83 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-reality-interactable-actor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Reality Interactable Actor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a Reality Interactable Actor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-what-should-not-be-interactable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of What Should Not Be Interactable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#converting-an-existing-actor-to-a-reality-interactable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Converting an Existing Actor to a Reality Interactable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-example-interactables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Example Interactables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#placement-in-mod-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Placement in Mod Folder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scaling-interactables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scaling Interactables
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -977,7 +1072,64 @@
 
 
 
-<h1 id="create-interactables">Create Interactables<a class="headerlink" href="#create-interactables" title="Permanent link">¶</a></h1>
+  <h1>Create Interactable</h1>
+
+<div><h2 id="creating-a-reality-interactable-actor">Creating a Reality Interactable Actor<a class="headerlink" href="#creating-a-reality-interactable-actor" title="Permanent link">¶</a></h2>
+<ol>
+<li><strong>Right-click</strong> in the <strong>Content Browser</strong>.  </li>
+<li>Select <strong>Create Blueprint Class</strong>.  </li>
+<li>Search for <strong>Reality Interactable</strong>.  </li>
+<li>Choose it as the <strong>parent class</strong> for your new blueprint.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use Reality Interactable for anything that requires <strong>physics-based interaction</strong>.</p>
+</div>
+<h3 id="examples-of-what-should-not-be-interactable">Examples of What Should <em>Not</em> Be Interactable<a class="headerlink" href="#examples-of-what-should-not-be-interactable" title="Permanent link">¶</a></h3>
+<ul>
+<li>Decorative props that don’t need physics interaction  </li>
+<li>Non-physical gameplay elements (e.g., trigger volumes, UI components)</li>
+</ul>
+<hr>
+<h2 id="converting-an-existing-actor-to-a-reality-interactable">Converting an Existing Actor to a Reality Interactable<a class="headerlink" href="#converting-an-existing-actor-to-a-reality-interactable" title="Permanent link">¶</a></h2>
+<p>If you already have an actor and want to make it interactable:</p>
+<ol>
+<li>Open the existing actor’s <strong>Blueprint</strong>.  </li>
+<li>In the <strong>top ribbon</strong>, click <strong>Class Settings</strong>.  </li>
+<li>In the <strong>Details Panel</strong>, set the <strong>Parent Class</strong> to <code>Reality Interactable</code>.</li>
+</ol>
+<hr>
+<h2 id="viewing-example-interactables">Viewing Example Interactables<a class="headerlink" href="#viewing-example-interactables" title="Permanent link">¶</a></h2>
+<p>To explore example Reality Interactable blueprints:</p>
+<ol>
+<li>Open the <strong>Content Browser</strong>.  </li>
+<li>Click <strong>Settings</strong> (top right).  </li>
+<li>Enable <strong>Show Engine Content</strong>.  </li>
+<li>In the <strong>Engine directory</strong>, search for <code>RealityInteractable</code>.</li>
+</ol>
+<p>You’ll find blueprints such as:</p>
+<ul>
+<li><code>RealityInteractable_DoorHandle</code>  </li>
+<li><code>RealityInteractable_Machete</code></li>
+</ul>
+<p>These can be great references for setup and best practices.</p>
+<hr>
+<h2 id="placement-in-mod-folder">Placement in Mod Folder<a class="headerlink" href="#placement-in-mod-folder" title="Permanent link">¶</a></h2>
+<p>When you create a mod, a folder named <strong><code>ModName Content</code></strong> is automatically generated in the <strong>Plugins</strong> folder.</p>
+<blockquote>
+<p>Make sure your <strong>Reality Interactable actor</strong> (and all dependencies i.e meshes, textures, animations) are saved inside this folder, or it will <strong>not be packaged</strong> with your mod.</p>
+</blockquote>
+<hr>
+<h2 id="scaling-interactables">Scaling Interactables<a class="headerlink" href="#scaling-interactables" title="Permanent link">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not scale the Root Component directly. Changing the root component’s scale causes physics issues. (The <strong>Root Component</strong> is the top component in the Components hierarchy when a Blueprint is open)</p>
+</div>
+<p>Instead, use the UE5 Editor tools to adjust the size of your mesh:</p>
+<ul>
+<li><strong>Remodel</strong> or <strong>reimport</strong> the mesh at the correct scale.  </li>
+<li>Alternatively, use the <strong>Static Mesh Editor</strong> to adjust its import scale.</li>
+</ul></div>
 
 
 

@@ -1,39 +1,36 @@
-# How to Get The Reality SDK (Beyond Sandbox Modkit)
+# Installing RealitySDK and Unreality Engine
 
-- Download the Reality modkit installer (RealityInstaller.zip): [https://github.com/AtlasXRInc/RealitySDK-dev/releases/tag/RealityInstaller](https://github.com/AtlasXRInc/RealitySDK-dev/releases/tag/RealityInstaller)  
-- Unzip it in the folder where you want to install Unreality (our fork of Unreal).  
-  - It’s recommended to unzip it at the root directory (C:\RealityInstaller) to avoid issues with long file paths.
-- Open PowerShell as Administrator and navigate to the extracted directory:
 
-  ```powershell
-  cd path\to\RealityInstaller
-  ```
+* Download RealitySDK.zip from the [Unreality Releases page](https://github.com/AtlasXRInc/Unreality/releases)
+    * Move the RealitySDK.zip file to the root of your drive (e.g., C:\). ⚠️ This prevents long file path issues with Unreal Engine.
+    * Right-click the file and select Extract All...
 
-* Run the installer:
 
-  ```powershell
-  .\Install.bat
-  ```
+![ExtractRealitySDK](../Data/Screenshot/ExtractRealitySDK.png)
+This will be your root folder for the Unreality Engine
+
+
+* Now download the Unreality Engine (all seven Engine.zip.00X files from the same GitHub releases page).
+    * Place all seven .00X files inside the extracted RealitySDK folder. (⚠️ See picture)
+    * Double-click RealitySetup.
+
+![ExtractUnrealityEngine](../Data/Screenshot/ExtractUnrealityEngine.png)
+
+
+This process will extract the Unreality Engine and install the RealitySDK along with all required dependencies.
+
+Once the installation is complete, Unreal Engine will prompt a confirmation window — click Allow to proceed. The engine will then launch automatically.
+
 !!!warning
-
     This requires **at least 55 GB of free space**.
-
-* The installer sets up:
-
-    * Atlas XR’s **Unreality Engine** fork
-    * The **Reality Modkit plugin**
-    * ADB & Java (Used to build and sideload your mods to Quest)
-
-
-Once installed, at the root of your installation folder, **run `Launch Unreal Editor.exe` at least once** to complete the setup.
 
 ---
 
 ## Understanding Unreality vs Reality
 
-* **Unreality** is Atlas XR and Meta’s fork of Unreal Engine, optimized for VR.
+* **Unreality Engine** is Atlas XR and Meta’s fork of Unreal Engine, optimized for VR.
   It’s updated rarely and is the base engine you’ll build on.
-* **Reality** is the modkit.
+* **RealitySDK** is the modkit.
   It’s updated frequently and contains the SDK tools you’ll use when creating mods.
 
 ---
@@ -51,15 +48,6 @@ Once installed, at the root of your installation folder, **run `Launch Unreal Ed
     - Quality Preset: **Scalable**
 
 3. Click **Create** to make a new project.
-
-!!! warning
-
-    Make sure all parent folder names along the path to the project directory do not have any spaces.
-
-!!! note
-
-    You may see a popup regarding Shader Model 6.
-    This can be safely ignored.
 
 4. Once the project opens:
 

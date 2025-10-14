@@ -1,6 +1,7 @@
 # Create Firearms
 A **Reality Firearm** is a specialized **child class** of [Reality Interactable](./reality-interactable.md) designed specifically for creating firearms in your mods.  
-This class includes all the necessary functionality for handling VR weapon interactions, such as grabbing, aiming, firing, and physical collision.
+This class includes all the necessary functionality for handling VR weapon interactions, such as grabbing, aiming, firing, and physical collision.  
+The `RealityFirearm` class is designed to easily let you make 90% of existing weapons out of the box and is modular enough to set up the remaining 10%.
 
 ---
 

@@ -48,9 +48,8 @@ They rely on playing animations on a **special skeletal mesh hand**, allowing ex
 ### Setting Up an Animated Grip
 
 1. **Add a `RealityGripComponent`** to your object.  
-2. Choose whether it’s for the **left** or **right** hand.  
-3. For each hand, assign the corresponding **blendspace**.  
-    - Note: Only the blendspace for the selected hand is actually used.  
+2. In the details panel, you can set the preview to be the **left** or **right** hand.  
+3. For each hand, assign the corresponding **blendspace**.
 4. Create a **collision volume** for this grip.  
     - The grip will only activate when the user’s hand overlaps this volume and they pull the grip trigger on their controller.
 

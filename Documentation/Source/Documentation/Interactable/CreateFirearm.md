@@ -16,6 +16,19 @@ Once created, you can customize the firearm’s appearance, behavior, and mechan
 <!-- TODO Explain the firing system, chambering system and feeding system + API  -->
 
 ---
+## Grip Auto-Registration
+
+The `RealityFirearm` class comes with some grips **automatically registered** on Begin Play:
+
+- **Charging Handle Grip** → Registered as an **Animated Grip**  
+
+- **Main Grip** → Registered as an **Animated Grip**
+
+- **Main Mesh** → Registered as a **Procedural Grip**
+!!! note
+    Disabling an animated grip inherited from a parent class can be done by setting the bounds of the associated collision volume to zero. For example, this is done for the charging handle in the sawed off double barrel shotgun.
+
+---
 
 ## Viewing Example Firearms
 

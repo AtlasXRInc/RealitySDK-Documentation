@@ -15,6 +15,7 @@ nav:
       - Create Interactable: 'Documentation/Interactable/CreateInteractable.md'
       - Sharp Area Component: 'Documentation/Interactable/SharpArea.md'
       - Create Firearm: 'Documentation/Interactable/CreateFirearm.md'
+      - Grips: 'Documentation/Interactable/Grips.md'
     - Gamemode:
       - Overview: 'Documentation/Gamemode/Overview.md'
       - Create Gamemode: 'Documentation/Gamemode/CreateGamemode.md'

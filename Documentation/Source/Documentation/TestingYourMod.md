@@ -130,3 +130,6 @@ If you want to test your mod with **someone else’s mod** (e.g., their weapon +
     - Place the mod files there for others to access.
 
 2. They can **send you their mod files directly**, and you place them into your project.
+
+!!! warning
+    If you delete the manifest file in **Reality > Mods > YourMod** you will not be able to update your mod again.

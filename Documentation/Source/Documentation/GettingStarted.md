@@ -10,8 +10,8 @@
 This will be your root folder for the Unreality Engine
 
 
-* Now download the Unreality Engine (all seven Engine.zip.00X files from the same GitHub releases page).
-    * Place all seven .00X files inside the extracted RealitySDK folder. (⚠️ See picture)
+* Now download the Unreality Engine (all six Engine.zip.00X files from the same GitHub releases page).
+    * Place all six .00X files inside the extracted RealitySDK folder. (⚠️ See picture)
     * Double-click RealitySetup.
 
 ![ExtractUnrealityEngine](../Data/Screenshot/ExtractUnrealityEngine.png)

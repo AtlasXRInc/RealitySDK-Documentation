@@ -2,98 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://reality.beyondsandbox.com/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/API/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Download/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/gettingstarted/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/CreateMap/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/CreateMod/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/GettingStarted/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Prerequisites/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Roadmap/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/TestMod/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
-         <loc>https://reality.beyondsandbox.com/Documentation/Game%20Feature/Class/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <loc>https://reality.beyondsandbox.com/Documentation/TestingYourMod/</loc>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
-         <loc>https://reality.beyondsandbox.com/Documentation/Game%20Feature/Loadout/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <loc>https://reality.beyondsandbox.com/Documentation/Feature/Class/</loc>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
-         <loc>https://reality.beyondsandbox.com/Documentation/Game%20Feature/Overview/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <loc>https://reality.beyondsandbox.com/Documentation/Feature/Loadout/</loc>
+         <lastmod>2025-10-18</lastmod>
+    </url>
+    <url>
+         <loc>https://reality.beyondsandbox.com/Documentation/Feature/Overview/</loc>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Gamemode/CreateGamemode/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Gamemode/Overview/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/GettingStarted/Index/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Interactable/CreateFirearm/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Interactable/CreateInteractable/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
+    </url>
+    <url>
+         <loc>https://reality.beyondsandbox.com/Documentation/Interactable/Grips/</loc>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Interactable/Index/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Interactable/Overview/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Interactable/SharpArea/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Level/CreateLevel/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
     <url>
          <loc>https://reality.beyondsandbox.com/Documentation/Level/Overview/</loc>
-         <lastmod>2025-10-12</lastmod>
+         <lastmod>2025-10-18</lastmod>
     </url>
 </urlset>

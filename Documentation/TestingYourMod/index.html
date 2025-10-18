@@ -10,28 +10,28 @@
         <meta name="author" content="AtlasXR">
       
       
-        <link rel="canonical" href="https://reality.beyondsandbox.com/Documentation/Gamemode/Overview/">
+        <link rel="canonical" href="https://reality.beyondsandbox.com/Documentation/TestingYourMod/">
       
       
-        <link rel="prev" href="../../Interactable/Grips/">
+        <link rel="prev" href="../GettingStarted/">
       
       
-        <link rel="next" href="../CreateGamemode/">
+        <link rel="next" href="../Interactable/Overview/">
       
       
-      <link rel="icon" href="../../../Data/Logo.png">
+      <link rel="icon" href="../../Data/Logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Overview - Reality SDK [0.3]</title>
+        <title>Testing Your Mod - Reality SDK [0.3]</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -56,16 +56,16 @@
       
     
     
-      <link rel="stylesheet" href="../../../CSS/style.css">
+      <link rel="stylesheet" href="../../CSS/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -74,7 +74,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#no-vr-preview-in-editor" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -100,9 +105,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Reality SDK [0.3]" class="md-header__button md-logo" aria-label="Reality SDK [0.3]" data-md-component="logo">
+    <a href="../.." title="Reality SDK [0.3]" class="md-header__button md-logo" aria-label="Reality SDK [0.3]" data-md-component="logo">
       
-  <img src="../../../Data/Logo.png" alt="logo">
+  <img src="../../Data/Logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -119,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Testing Your Mod
             
           </span>
         </div>
@@ -194,7 +199,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -213,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../GettingStarted/" class="md-tabs__link">
+      <a href="../GettingStarted/" class="md-tabs__link">
         
   
   
@@ -230,9 +235,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../../TestingYourMod/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -249,8 +256,6 @@
   
   
   
-    
-  
   
     
     
@@ -258,13 +263,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Interactable/Overview/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../Interactable/Overview/" class="md-tabs__link">
           
   
   
@@ -305,9 +308,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Reality SDK [0.3]" class="md-nav__button md-logo" aria-label="Reality SDK [0.3]" data-md-component="logo">
+    <a href="../.." title="Reality SDK [0.3]" class="md-nav__button md-logo" aria-label="Reality SDK [0.3]" data-md-component="logo">
       
-  <img src="../../../Data/Logo.png" alt="logo">
+  <img src="../../Data/Logo.png" alt="logo">
 
     </a>
     Reality SDK [0.3]
@@ -322,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -344,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../GettingStarted/" class="md-nav__link">
+      <a href="../GettingStarted/" class="md-nav__link">
         
   
   
@@ -363,10 +366,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../TestingYourMod/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Testing Your Mod
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -377,6 +400,150 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#no-vr-preview-in-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      No VR Preview in Editor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-installing-local-sideload" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building &amp; Installing (Local Sideload)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building &amp; Installing (Local Sideload)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rebuilding-multiple-mods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rebuilding &amp; Multiple Mods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-modio-in-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting to Mod.io (In Editor)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connecting to Mod.io (In Editor)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-configure-your-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Configure Your Email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-authenticate-get-otp" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Authenticate &amp; Get OTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-enter-otp-in-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Enter OTP in Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publishing-mods-to-modio-cloud-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publishing Mods to Mod.io (Cloud Distribution)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Publishing Mods to Mod.io (Cloud Distribution)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uploading-your-mod-to-modio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uploading Your Mod to Mod.io
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-mods-between-creators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sharing Mods Between Creators
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -385,10 +552,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -404,22 +569,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -432,7 +596,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Documentation
@@ -464,13 +628,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -479,7 +640,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
             
   
   
@@ -506,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Interactable/Overview/" class="md-nav__link">
+      <a href="../Interactable/Overview/" class="md-nav__link">
         
   
   
@@ -529,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Interactable/CreateInteractable/" class="md-nav__link">
+      <a href="../Interactable/CreateInteractable/" class="md-nav__link">
         
   
   
@@ -552,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Interactable/SharpArea/" class="md-nav__link">
+      <a href="../Interactable/SharpArea/" class="md-nav__link">
         
   
   
@@ -575,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Interactable/CreateFirearm/" class="md-nav__link">
+      <a href="../Interactable/CreateFirearm/" class="md-nav__link">
         
   
   
@@ -598,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Interactable/Grips/" class="md-nav__link">
+      <a href="../Interactable/Grips/" class="md-nav__link">
         
   
   
@@ -626,10 +787,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -642,21 +801,20 @@
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
             
   
   
@@ -669,7 +827,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             Gamemode
@@ -680,17 +838,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Gamemode/Overview/" class="md-nav__link">
         
   
   
@@ -701,7 +852,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -714,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CreateGamemode/" class="md-nav__link">
+      <a href="../Gamemode/CreateGamemode/" class="md-nav__link">
         
   
   
@@ -759,13 +909,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -774,7 +921,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
   
@@ -801,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Feature/Overview/" class="md-nav__link">
+      <a href="../Feature/Overview/" class="md-nav__link">
         
   
   
@@ -824,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Feature/Loadout/" class="md-nav__link">
+      <a href="../Feature/Loadout/" class="md-nav__link">
         
   
   
@@ -847,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Feature/Class/" class="md-nav__link">
+      <a href="../Feature/Class/" class="md-nav__link">
         
   
   
@@ -890,13 +1037,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -905,7 +1049,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
   
@@ -932,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Level/Overview/" class="md-nav__link">
+      <a href="../Level/Overview/" class="md-nav__link">
         
   
   
@@ -955,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Level/CreateLevel/" class="md-nav__link">
+      <a href="../Level/CreateLevel/" class="md-nav__link">
         
   
   
@@ -1002,8 +1146,133 @@
 
 
 
-<div><h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h1>
-<p>Coming soon.</p></div>
+<div><h1 id="building-testing-your-mod">Building &amp; Testing Your Mod<a class="headerlink" href="#building-testing-your-mod" title="Permanent link">¶</a></h1>
+<p>Your mod is an <strong>Unreal Engine plugin</strong>. Plugins can live standalone in any Unreal project and be packaged into any game.  </p>
+<p>For now, you <strong>cannot test your plugin in Beyond</strong>. You must test it inside a packaged game and run it on your Quest headset.</p>
+<hr>
+<h2 id="no-vr-preview-in-editor">No VR Preview in Editor<a class="headerlink" href="#no-vr-preview-in-editor" title="Permanent link">¶</a></h2>
+<p><strong>VR Preview testing inside Unreal Editor is not supported.</strong><br>
+When you're ready to test your mod, you need to:</p>
+<ol>
+<li><strong>Build</strong> the mod.</li>
+<li><strong>Install</strong> it onto your Quest headset.</li>
+<li>Launch it from your headset.</li>
+</ol>
+<p>There are two main ways to do this:</p>
+<ul>
+<li><strong>Local Sideloading</strong> (Build + Install directly to headset)  </li>
+<li><strong>Mod.io Upload</strong> (Cloud-based distribution)</li>
+</ul>
+<hr>
+<h2 id="building-installing-local-sideload">Building &amp; Installing (Local Sideload)<a class="headerlink" href="#building-installing-local-sideload" title="Permanent link">¶</a></h2>
+<p>Do not use the standard Unreal packaging menu.<br>
+Instead, always use the <strong>Reality menu → Build / Install / Run</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You cannot install mods if you're logged into a <strong>secondary Meta account</strong>. Sideloading only works with the <strong>primary (admin) account</strong> and requires Dev Mode to be enabled.</p>
+</div>
+<h3 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">¶</a></h3>
+<ol>
+<li>In Unreal Editor, go to the <strong>Reality</strong> dropdown menu (top menu bar).</li>
+<li>Make sure the mod you want to build is <strong>selected</strong></li>
+<li>
+<p>From the Reality menu, choose:</p>
+<ul>
+<li><strong>Build</strong> → Builds the mod (cooks assets + runs necessary processes)  </li>
+<li><strong>Install</strong> → Transfers the built mod to your headset via sideload  </li>
+<li><strong>Run</strong> → Not functional yet</li>
+</ul>
+</li>
+</ol>
+<p>Once installed, a <strong>standalone game</strong> will appear on your headset under <strong>“Unknown Sources”</strong>.</p>
+<h3 id="rebuilding-multiple-mods">Rebuilding &amp; Multiple Mods<a class="headerlink" href="#rebuilding-multiple-mods" title="Permanent link">¶</a></h3>
+<ul>
+<li>To update a mod you’ve already installed, simply <strong>Build + Install</strong> again.</li>
+<li>To test another mod, <strong>select it</strong> and repeat Build + Install.</li>
+<li>You <strong>cannot uninstall mods</strong> from the headset manually.</li>
+<li>To test multiple mods at once, build and install them <strong>one by one</strong>.</li>
+</ul>
+<hr>
+<h2 id="connecting-to-modio-in-editor">Connecting to Mod.io (In Editor)<a class="headerlink" href="#connecting-to-modio-in-editor" title="Permanent link">¶</a></h2>
+<p>To use Mod.io in, you need to <strong>authenticate</strong> your Mod.io account from the editor.</p>
+<h3 id="1-configure-your-email">1. Configure Your Email<a class="headerlink" href="#1-configure-your-email" title="Permanent link">¶</a></h3>
+<ul>
+<li>Open <strong>Reality → Settings</strong>.</li>
+<li>In the <strong>Mail</strong> field, type the email you want to use with Mod.io.</li>
+</ul>
+<h3 id="2-authenticate-get-otp">2. Authenticate &amp; Get OTP<a class="headerlink" href="#2-authenticate-get-otp" title="Permanent link">¶</a></h3>
+<ul>
+<li>Go to <strong>Reality → Authenticate</strong>.  </li>
+<li>This will send a <strong>One-Time Password (OTP)</strong> to your email.</li>
+</ul>
+<p>If you don't have a Mod.io account, use this OTP to <strong>create one</strong>. Then repeat step <strong>2</strong>.</p>
+<h3 id="3-enter-otp-in-settings">3. Enter OTP in Settings<a class="headerlink" href="#3-enter-otp-in-settings" title="Permanent link">¶</a></h3>
+<ul>
+<li>Go back to <strong>Reality → Settings</strong>.</li>
+<li>Enter the received OTP into the <strong>Mail Code</strong> field.</li>
+<li>Then go back to <strong>Reality → Authenticate</strong> again.</li>
+</ul>
+<p>Once successful:</p>
+<ul>
+<li>Restart the editor.</li>
+<li>The red circle next to <strong>Authenticate</strong> should turn <strong>green</strong>, indicating you're signed in.</li>
+</ul>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you see the following error, it means the OTP was already used. 
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Authentication error: The email security code has already been redeemed.
+</span></code></pre></div>
+To fix it:
+<ul>
+<li>Clear the <strong>Mail Code</strong> field in Reality → Settings.</li>
+<li>Click <strong>Reality → Authenticate</strong> again to get a new OTP emailed to you.</li>
+</ul>
+</div>
+<hr>
+<h2 id="publishing-mods-to-modio-cloud-distribution">Publishing Mods to Mod.io (Cloud Distribution)<a class="headerlink" href="#publishing-mods-to-modio-cloud-distribution" title="Permanent link">¶</a></h2>
+<p>Once you have a standalone game on your headset that was packaged from Reality, you can also distribute and test updates of your mod through <strong>Mod.io</strong>.  </p>
+<p>Unlike local sideloading, Mod.io:</p>
+<ul>
+<li>Works with <strong>secondary Meta accounts</strong></li>
+<li>Does <strong>not</strong> require Dev Mode</li>
+<li>Distributes mods through the cloud</li>
+</ul>
+<p>This is especially useful for:</p>
+<ul>
+<li>Testing in <strong>multiplayer</strong></li>
+<li>Sharing mods between creators</li>
+</ul>
+<hr>
+<h3 id="uploading-your-mod-to-modio">Uploading Your Mod to Mod.io<a class="headerlink" href="#uploading-your-mod-to-modio" title="Permanent link">¶</a></h3>
+<ol>
+<li>Select your mod in the Unreal Editor.  </li>
+<li>From the mod’s dropdown menu, choose <strong>Publish/Update</strong>.<br>
+   This uploads your mod to Mod.io.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For now, <strong>multiplayer testing</strong> requires publishing your mod to Mod.io.</p>
+</div>
+<hr>
+<h3 id="sharing-mods-between-creators">Sharing Mods Between Creators<a class="headerlink" href="#sharing-mods-between-creators" title="Permanent link">¶</a></h3>
+<p>If you want to test your mod with <strong>someone else’s mod</strong> (e.g., their weapon + your shield), there are two ways:</p>
+<ol>
+<li>
+<p>They can <strong>share their content with everyone</strong>:</p>
+<ul>
+<li>Inside their plugin’s content folder, create a folder called <code>Shared</code>.</li>
+<li>Place the mod files there for others to access.</li>
+</ul>
+</li>
+<li>
+<p>They can <strong>send you their mod files directly</strong>, and you place them into your project.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you delete the manifest file in <strong>Reality &gt; Mods &gt; YourMod</strong> you will not be able to update your mod again.</p>
+</div></div>
 
 
 
@@ -1039,7 +1308,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../Interactable/Grips/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Grips">
+          <a href="../GettingStarted/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -1049,20 +1318,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Grips
+                Getting Started
               </div>
             </div>
           </a>
         
         
           
-          <a href="../CreateGamemode/" class="md-footer__link md-footer__link--next" aria-label="Next: Create Gamemode">
+          <a href="../Interactable/Overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Create Gamemode
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1104,10 +1373,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.previous_next", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.footer", "toc.integrate", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.previous_next", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.footer", "toc.integrate", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

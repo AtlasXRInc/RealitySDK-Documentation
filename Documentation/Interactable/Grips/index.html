@@ -10,13 +10,13 @@
         <meta name="author" content="AtlasXR">
       
       
-        <link rel="canonical" href="https://reality.beyondsandbox.com/Documentation/Gamemode/Overview/">
+        <link rel="canonical" href="https://reality.beyondsandbox.com/Documentation/Interactable/Grips/">
       
       
-        <link rel="prev" href="../../Interactable/Grips/">
+        <link rel="prev" href="../CreateFirearm/">
       
       
-        <link rel="next" href="../CreateGamemode/">
+        <link rel="next" href="../../Gamemode/Overview/">
       
       
       <link rel="icon" href="../../../Data/Logo.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Overview - Reality SDK [0.3]</title>
+        <title>Grips - Reality SDK [0.3]</title>
       
     
     
@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#procedural-grips" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -119,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Grips
             
           </span>
         </div>
@@ -264,7 +269,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Interactable/Overview/" class="md-tabs__link">
+        <a href="../Overview/" class="md-tabs__link">
           
   
   
@@ -443,6 +448,8 @@
                 
   
   
+    
+  
   
   
     
@@ -453,6 +460,303 @@
         
       
         
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Interactable
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Interactable
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CreateInteractable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create Interactable
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SharpArea/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sharp Area Component
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CreateFirearm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create Firearm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Grips
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grips
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#procedural-grips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedural Grips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedural Grips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registering-a-procedural-grip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registering a Procedural Grip
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animated-grips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animated Grips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Animated Grips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-an-animated-grip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up an Animated Grip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-an-animated-grip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registering an Animated Grip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animated-grip-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animated Grip Behavior
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
       
         
       
@@ -476,184 +780,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Interactable
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1">
-            <span class="md-nav__icon md-icon"></span>
-            Interactable
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Interactable/Overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Interactable/CreateInteractable/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Create Interactable
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Interactable/SharpArea/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Sharp Area Component
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Interactable/CreateFirearm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Create Firearm
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Interactable/Grips/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Grips
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
@@ -669,7 +796,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             Gamemode
@@ -680,17 +807,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Gamemode/Overview/" class="md-nav__link">
         
   
   
@@ -701,7 +821,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -714,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CreateGamemode/" class="md-nav__link">
+      <a href="../../Gamemode/CreateGamemode/" class="md-nav__link">
         
   
   
@@ -1002,8 +1121,77 @@
 
 
 
-<div><h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h1>
-<p>Coming soon.</p></div>
+<div><h1 id="gripping-system">Gripping System<a class="headerlink" href="#gripping-system" title="Permanent link">¶</a></h1>
+<p>There are <strong>two types of grips</strong> available in the Reality Modkit:</p>
+<ul>
+<li><strong>Procedural Grips</strong> – quick to set up, automatically adapt to any shape, but offer limited fine-tuning.  </li>
+<li><strong>Animated Grips</strong> – allow for precise, hand-animated interactions such as weapon grips, triggers, or special poses.</li>
+</ul>
+<hr>
+<h2 id="procedural-grips">Procedural Grips<a class="headerlink" href="#procedural-grips" title="Permanent link">¶</a></h2>
+<p><strong>Procedural grips</strong> adapt dynamically to the shape of the object using its collision. They’re ideal for general props or objects where precise finger placement isn’t required.</p>
+<ul>
+<li>Very easy to set up  </li>
+<li>Works on any shape  </li>
+<li>No fine-tuning or animation control</li>
+</ul>
+<p>All you need to do is define a <strong>collision volume</strong> that determines where gripping becomes active.</p>
+<blockquote>
+<p><strong>Note:</strong> Even without procedural gripping set up, the physics system may still let you “pick up” items in a loose way (e.g. wrapping fingers around a gun grip). However, to have the item properly attached to the hand, you must enable procedural gripping. Internally, this uses <code>AttachComponentToComponent</code>.</p>
+</blockquote>
+<h3 id="registering-a-procedural-grip">Registering a Procedural Grip<a class="headerlink" href="#registering-a-procedural-grip" title="Permanent link">¶</a></h3>
+<p>You do <strong>not</strong> need to add a <code>RealityGripComponent</code> or set up any special collision volume to register a procedural grip.</p>
+<p>On Begin Play, call:</p>
+<ul>
+<li><code>RegisterGripProcedural</code>  <ul>
+<li>Pass in the <strong>mesh</strong> you want to grip.  </li>
+<li>Pass in a <strong>struct of grip settings</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="animated-grips">Animated Grips<a class="headerlink" href="#animated-grips" title="Permanent link">¶</a></h2>
+<p><strong>Animated grips</strong> are used for precise hand interactions — for example, a pistol grip where the <strong>trigger finger</strong> moves independently when firing.</p>
+<p>They rely on playing animations on a <strong>special skeletal mesh hand</strong>, allowing exact control over finger poses and transitions through blendspaces.</p>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">¶</a></h3>
+<ul>
+<li>You must use the provided skeletal mesh: <strong><code>SKM_HandUE5</code></strong><br>
+  (This is already the default value for the hand field.)</li>
+<li>You need to create an <strong>animation</strong> for the hand.</li>
+<li>You need to create a <strong>blendspace</strong> that includes the relevant hand animations.  <ul>
+<li>This allows smooth finger transitions (e.g. pressing the trigger).</li>
+</ul>
+</li>
+</ul>
+<h3 id="setting-up-an-animated-grip">Setting Up an Animated Grip<a class="headerlink" href="#setting-up-an-animated-grip" title="Permanent link">¶</a></h3>
+<ol>
+<li><strong>Add a <code>RealityGripComponent</code></strong> to your object.  </li>
+<li>In the details panel, you can set the preview to be the <strong>left</strong> or <strong>right</strong> hand.  </li>
+<li>For each hand, assign the corresponding <strong>blendspace</strong>.</li>
+<li>Create a <strong>collision volume</strong> for this grip.  <ul>
+<li>The grip will only activate when the user’s hand overlaps this volume and they pull the grip trigger on their controller.</li>
+</ul>
+</li>
+</ol>
+<p>Each <code>RealityGripComponent</code> represents <strong>one grip</strong>.</p>
+<h3 id="registering-an-animated-grip">Registering an Animated Grip<a class="headerlink" href="#registering-an-animated-grip" title="Permanent link">¶</a></h3>
+<p>To register an animated grip, on Begin Play call:</p>
+<ul>
+<li><code>RegisterGripAnimation</code>  </li>
+<li>Pass in the <strong>RealityGripComponent</strong>  </li>
+<li>Pass in the <strong>collision volume</strong> (used only to detect overlap and activate the grip)  </li>
+<li>Pass in a <strong>struct of grip settings</strong></li>
+</ul>
+<h3 id="animated-grip-behavior">Animated Grip Behavior<a class="headerlink" href="#animated-grip-behavior" title="Permanent link">¶</a></h3>
+<ul>
+<li>When gripping, the <strong>root bone of the hand snaps</strong> to the defined grip location.  </li>
+<li>All finger and hand positioning is driven by the <strong>blendspace</strong>, not physics.</li>
+<li>When the controller releases the grip, the <strong>animated grip deactivates</strong>.</li>
+</ul>
+<hr>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
+<p>To see how grips are set up on different firearms and interactable objects, search for <strong><code>RealityFirearm</code></strong> or <strong><code>RealityInteractable</code></strong> in the <strong>Content Browser</strong>.  </p>
+<p>If no results appear, open the <strong>Content Browser Settings</strong> and enable <strong>“Show Engine Content”</strong> to make these examples visible.</p></div>
 
 
 
@@ -1039,7 +1227,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../Interactable/Grips/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Grips">
+          <a href="../CreateFirearm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create Firearm">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -1049,20 +1237,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Grips
+                Create Firearm
               </div>
             </div>
           </a>
         
         
           
-          <a href="../CreateGamemode/" class="md-footer__link md-footer__link--next" aria-label="Next: Create Gamemode">
+          <a href="../../Gamemode/Overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Create Gamemode
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

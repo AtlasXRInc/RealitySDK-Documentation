@@ -13,6 +13,7 @@ nav:
     - Interactable:
       - Overview: 'Documentation/Interactable/Overview.md'
       - Create Interactable: 'Documentation/Interactable/CreateInteractable.md'
+      - Prepare Meshes: 'Documentation/Interactable/PrepareMeshes.md'
       - Sharp Area Component: 'Documentation/Interactable/SharpArea.md'
       - Create Firearm: 'Documentation/Interactable/CreateFirearm.md'
       - Grips: 'Documentation/Interactable/Grips.md'

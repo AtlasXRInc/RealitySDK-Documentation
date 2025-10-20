@@ -44,8 +44,9 @@ You’ll find example blueprints such as:
 
 - `RealityFirearm_AK47_Example`  
 - `RealityFirearmDoubleBarrelSawedOff_Example`
+- `RealityFirearm_Revolver_Magnum_Example`
 
-These are great references to understand weapon setup, components, and functionality.
+These examples are excellent references for understanding weapon setup, components, and functionality. They also demonstrate how the modular system can be used to create specialized mechanisms or broader variations, such as the **Revolver** class, which extends the firearm system to include a physics based spinning cylinder.
 
 ---
 

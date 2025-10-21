@@ -10,9 +10,13 @@
         <meta name="author" content="AtlasXR">
       
       
-        <link rel="canonical" href="https://reality.beyondsandbox.com/Documentation/Interactable/Index/">
+        <link rel="canonical" href="https://reality.beyondsandbox.com/Documentation/Interactable/PrepareMeshes/">
       
       
+        <link rel="prev" href="../CreateInteractable/">
+      
+      
+        <link rel="next" href="../SharpArea/">
       
       
       <link rel="icon" href="../../../Data/Logo.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Interactables - Reality SDK [0.3]</title>
+        <title>Prepare Meshes - Reality SDK [0.3]</title>
       
     
     
@@ -86,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#accessing-reference-assets" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -115,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interactables
+              Prepare Meshes
             
           </span>
         </div>
@@ -245,6 +254,8 @@
   
   
   
+    
+  
   
     
     
@@ -252,10 +263,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Overview/" class="md-tabs__link">
           
   
@@ -377,8 +390,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -394,21 +409,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -421,7 +437,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Documentation
@@ -432,8 +448,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -454,20 +472,21 @@
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
             
   
   
@@ -480,7 +499,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Interactable
@@ -537,10 +556,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../PrepareMeshes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Prepare Meshes
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -551,6 +590,174 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-reference-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Reference Assets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scaling-your-weapon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scaling Your Weapon
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scaling Your Weapon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baking-the-transform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baking the Transform
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orientation-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orientation Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Orientation Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-pivot-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Pivot Points
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Pivot Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centered-pivots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Centered Pivots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotating-parts-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rotating Parts (Exceptions)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-simple-collision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Simple Collision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Simple Collision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checking-collision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Collision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generating-collision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generating Collision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-custom-collision-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Custom Collision Shapes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-notes-on-collision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Notes on Collision
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -652,10 +859,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -664,7 +874,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
             
   
   
@@ -759,10 +969,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -771,7 +984,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
             
   
   
@@ -887,10 +1100,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -899,7 +1115,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
             
   
   
@@ -996,7 +1212,117 @@
 
 
 
-<h1 id="interactables">Interactables<a class="headerlink" href="#interactables" title="Permanent link">¶</a></h1>
+<div><h1 id="preparing-meshes-for-reality-firearm-and-reality-interactable">Preparing Meshes for Reality Firearm and Reality Interactable<a class="headerlink" href="#preparing-meshes-for-reality-firearm-and-reality-interactable" title="Permanent link">¶</a></h1>
+<p>This guide explains how to correctly prepare meshes for use with the <strong>Reality Interactable</strong> and <strong>Reality Firearm</strong> systems.<br>
+It covers proper <strong>scaling</strong>, <strong>orientation</strong>, <strong>pivot point setup</strong>, and <strong>collision</strong> — all of which are essential for correct behavior in VR.</p>
+<hr>
+<h2 id="accessing-reference-assets">Accessing Reference Assets<a class="headerlink" href="#accessing-reference-assets" title="Permanent link">¶</a></h2>
+<p>To help verify scale and proportions, a <strong>hand reference</strong> is available in the ModKit:</p>
+<ol>
+<li>Open the <strong>Content Browser</strong>.</li>
+<li>Enable <strong>Show Engine Content</strong> (top right settings).</li>
+<li>Navigate to:<br>
+<code>Engine → Plugins → Reality → RealityContent → Core → Interactable → Grip</code></li>
+<li>In this folder, you’ll find various reference and example assets.</li>
+</ol>
+<p>The <strong>Reality Interactable Firearm</strong> examples include:</p>
+<ul>
+<li><code>AK-47</code></li>
+<li><code>LR-300</code></li>
+<li><code>M41B</code></li>
+<li><code>Round</code></li>
+</ul>
+<p>These examples demonstrate proper setup and can be used as reference when adjusting your own weapons.</p>
+<hr>
+<h2 id="scaling-your-weapon">Scaling Your Weapon<a class="headerlink" href="#scaling-your-weapon" title="Permanent link">¶</a></h2>
+<p>When preparing your weapon mesh, first ensure it matches the correct <strong>VR scale</strong> using the hand reference.</p>
+<h3 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">¶</a></h3>
+<ol>
+<li><strong>Parent all components</strong> (i.e. magazine, trigger, charging handle) to the base mesh (main part of the weapon).<br>
+   This ensures that when you scale, all parts maintain their relative positions.</li>
+<li>Select the <strong>parent mesh</strong> and adjust the scale in the details panel.</li>
+<li><strong>Unparent</strong> all child meshes so each one has the new scale applied.</li>
+<li>Select all meshes and open the <strong>Modeling Tools</strong> panel.</li>
+</ol>
+<h3 id="baking-the-transform">Baking the Transform<a class="headerlink" href="#baking-the-transform" title="Permanent link">¶</a></h3>
+<ol>
+<li>Go to <strong>XForm → Bake Transform</strong>.</li>
+<li>Check <strong>Apply to All LODs</strong> and <strong>Bake Rotation</strong>.</li>
+<li>Click <strong>Accept</strong>.</li>
+</ol>
+<p>This sets the new scale and rotation as default (<code>Scale = 1.0, Rotation = 0°</code>).</p>
+<hr>
+<h2 id="orientation-setup">Orientation Setup<a class="headerlink" href="#orientation-setup" title="Permanent link">¶</a></h2>
+<p>For the Reality Firearm system to function properly, weapons must face the <strong>+X-axis</strong>.</p>
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">¶</a></h3>
+<p>If your model currently faces the <strong>Y-axis</strong>:</p>
+<ol>
+<li><strong>Parent all components</strong> (i.e. magazine, trigger, charging handle) to the base mesh (main part of the weapon).</li>
+<li>Rotate your weapon <strong>90°</strong> so it aligns with the X-axis.</li>
+<li>Adjust small pitch angles if needed so the barrel is level with the floor.</li>
+<li>Once aligned, <strong>unparent</strong> the components.</li>
+<li>Select them all again and <strong>Bake Transform</strong> (rotation and scale).</li>
+</ol>
+<p>Now the default rotation should be correct for all parts (0, 0, 0).</p>
+<hr>
+<h2 id="setting-pivot-points">Setting Pivot Points<a class="headerlink" href="#setting-pivot-points" title="Permanent link">¶</a></h2>
+<p>Each mesh acts as a <strong>physics object</strong>, so correct pivot placement is important.</p>
+<h3 id="centered-pivots">Centered Pivots<a class="headerlink" href="#centered-pivots" title="Permanent link">¶</a></h3>
+<p>For most meshes (weapon body, magazine, charging handle):</p>
+<ol>
+<li>Open the <strong>Modeling Tools</strong> and go to the <strong>XForm</strong> tab.</li>
+<li>Select <strong>Edit Pivot</strong> → <strong>Center</strong>.</li>
+<li>Click <strong>Accept</strong> to bake the pivot.</li>
+</ol>
+<h3 id="rotating-parts-exceptions">Rotating Parts (Exceptions)<a class="headerlink" href="#rotating-parts-exceptions" title="Permanent link">¶</a></h3>
+<p>Some components, such as <strong>triggers</strong> or <strong>levers</strong>, need their pivots placed at their rotation point.</p>
+<ol>
+<li>Use <strong>Edit Pivot</strong> and move the pivot to where the rotation should occur (usually near the hinge).</li>
+<li>Fine-tune manually in the viewport.</li>
+<li>Click <strong>Accept</strong> to bake the new pivot.</li>
+<li>Test the rotation to ensure it behaves naturally.</li>
+</ol>
+<hr>
+<h2 id="adding-simple-collision">Adding Simple Collision<a class="headerlink" href="#adding-simple-collision" title="Permanent link">¶</a></h2>
+<p>Unreal Engine 5 requires meshes with <strong>simple collision</strong> for physics interactions.<br>
+Complex collisions are <strong>not supported</strong> by Reality systems.</p>
+<h3 id="checking-collision">Checking Collision<a class="headerlink" href="#checking-collision" title="Permanent link">¶</a></h3>
+<ol>
+<li>Double-click the mesh to open the <strong>Static Mesh Editor</strong>.</li>
+<li>Go to <strong>Show → Simple Collision</strong>.  <ul>
+<li>If nothing appears, the mesh doesn’t have simple collision.</li>
+</ul>
+</li>
+</ol>
+<h3 id="generating-collision">Generating Collision<a class="headerlink" href="#generating-collision" title="Permanent link">¶</a></h3>
+<ol>
+<li>Open <strong>Window → Convex Decomposition</strong>.</li>
+<li>Adjust the parameters:<ul>
+<li>Higher values = more detailed (but slower to compute).</li>
+</ul>
+</li>
+<li>Click <strong>Generate</strong> to create a collision mesh.</li>
+</ol>
+<p>You can move, resize, or delete generated collision pieces to refine accuracy.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Keep the magazine socket area clear so the magazine can be inserted properly.</p>
+</div>
+<h3 id="creating-custom-collision-shapes">Creating Custom Collision Shapes<a class="headerlink" href="#creating-custom-collision-shapes" title="Permanent link">¶</a></h3>
+<p>You can manually add:</p>
+<ul>
+<li><strong>Box</strong></li>
+<li><strong>Capsule</strong></li>
+<li><strong>Sphere</strong></li>
+</ul>
+<p>Then position and scale them to match the mesh.</p>
+<hr>
+<h2 id="important-notes-on-collision">Important Notes on Collision<a class="headerlink" href="#important-notes-on-collision" title="Permanent link">¶</a></h2>
+<ul>
+<li>Do <strong>not</strong> enable <strong>“Use Complex Collision as Simple.”</strong></li>
+<li>Keep <strong>Collision Complexity</strong> set to <strong>Project Default.</strong></li>
+<li>If you need highly accurate collisions, create them in a 3D modeling tool and reimport.</li>
+</ul></div>
 
 
 
@@ -1027,6 +1353,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../CreateInteractable/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create Interactable">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Create Interactable
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../SharpArea/" class="md-footer__link md-footer__link--next" aria-label="Next: Sharp Area Component">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Sharp Area Component
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

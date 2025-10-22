@@ -44,8 +44,6 @@ Once the installation is complete, Unreal Engine will prompt a confirmation wind
 
     - Select **Blank Project**
     - Blueprint project (not C++)
-    - Target platform: **Mobile**
-    - Quality Preset: **Scalable**
 
 3. Click **Create** to make a new project.
 
@@ -53,10 +51,8 @@ Once the installation is complete, Unreal Engine will prompt a confirmation wind
 
     * From the top ribbon, click **Edit → Plugins**.
     * Search for **Reality**.
-    * Click the checkbox to enable it.
+    * If it's disabled, click the checkbox to enable it.
     * Restart the editor when prompted.
-
-5. Replace the config files with the provided Reality config files to match rendering and collision settings.
 
 ---
 
@@ -73,7 +69,7 @@ Once your project is set up:
 2. Select **New Mod**.
 
 <!-- 
-TODO
+TODO Later
 Add correct project settings android sdk
 Add about getting Quest in dev mode
 

@@ -119,6 +119,9 @@ This is especially useful for:
 !!! note
     For now, **multiplayer testing** requires publishing your mod to Mod.io.
 
+!!! warning
+    When updating an existing mod on Mod.io, go to the Reality dropdown, hit **Edit Mod**, and increase the **Version Number** string manually. There also must be at least one new change to your source files (blueprints) for the update to work. Then hit the **Publish/Update** button.
+
 ---
 
 ### Sharing Mods Between Creators
@@ -126,8 +129,9 @@ This is especially useful for:
 If you want to test your mod with **someone else’s mod** (e.g., their weapon + your shield), there are two ways:
 
 1. They can **share their content with everyone**:
-    - Inside their plugin’s content folder, create a folder called `Shared`.
+    - Inside their plugin’s content folder (the root folder), create a folder called `Shared`.
     - Place the mod files there for others to access.
+    - All files placed in the `Shared` folder will be pushed under a -dev version to Mod.io so modders can get source files of a GameMode for example
 
 2. They can **send you their mod files directly**, and you place them into your project.
 

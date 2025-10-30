@@ -4,6 +4,11 @@
 2. Select **Create Blueprint Class**.  
 3. Search for **Reality Interactable**.  
 4. Choose it as the **parent class** for your new blueprint.
+5. Create and link the appropriate **data asset** in the details panel of your actor
+    - Each Reality Interactable actor **needs** a data asset or you will get errors
+    - Generic RealityInteractable actors should use the RealityInteractableData asset
+    - Otherwise, use the Data Asset corresponding to the **correct child class** (i.e RealityRoundData for RealityRound, RealityMagazineData for RealityMagazine)
+        - You can look at examples `/All/EngineData/Plugins/Reality/Library/Interactable` to see how data assets are used correctly
 
 !!! tip
     Use Reality Interactable for anything that requires **physics-based interaction**.

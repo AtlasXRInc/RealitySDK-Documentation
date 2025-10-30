@@ -10,6 +10,8 @@ It includes built-in grabbing, aiming, firing, and physics. The `RealityFirearm`
 1. **Right-click** in the **Content Browser** → **Create Blueprint Class**.  
 2. Search for **RealityFirearm** and choose it as the **parent class**.  
 3. Open the Blueprint and customize components, visuals, and behavior.
+4. Assign the **Data** variable to a **RealityFirearmData** asset in the details panel
+    - You will get errors without this
 
 > You’ll configure behavior via three systems in the Data Asset: **Feeding**, **Chambering**, and **Firing**.
 
@@ -83,7 +85,7 @@ Remove irrelevant example components (e.g., AK-specific bits) to keep things cle
 
 ---
 
-## Magazine & Guiding Spline
+## Magazine & Guiding Spline (for weapons with external magazines)
 
 **Weapon side**
 
@@ -103,6 +105,19 @@ Remove irrelevant example components (e.g., AK-specific bits) to keep things cle
     - When they overlap, this begins the magazine guiding process
 
 > Magazines inherit from **Reality Interactable**, so they support standard interactable behavior.
+
+---
+
+## ISM Round Mechanism System
+
+The **ISM Round Mechanism System** is used to visually represent and manage rounds inside a magazine.  
+Each **Reality Magazine** can contain an **InstancedRoundGenerator** component, which inherits from Unreal’s `InstancedStaticMesh` component.
+
+This component handles **round placement** and uses instancing to render repeated meshes (the rounds) efficiently — drastically reducing draw calls and improving GPU performance.
+
+You can fine-tune parameters in the **InstancedRoundGenerator** to ensure rounds are correctly aligned and spaced inside your magazine.
+
+> Example: check out the **RealityMagazine_AK47_Example** to see a working setup of the ISM Round Mechanism.
 
 ---
 

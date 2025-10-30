@@ -1,6 +1,6 @@
 # Create Firearms
 
-A **Reality Firearm** is a specialized **child class** of [Reality Interactable](./reality-interactable.md) designed for VR weapons.  
+A **Reality Firearm** is a specialized **child class** of [Reality Interactable](../CreateInteractable.md) designed for VR weapons.  
 It includes built-in grabbing, aiming, firing, and physics. The `RealityFirearm` class lets you build ~90% of weapons out of the box and is modular enough for the remaining 10%.
 
 ---
@@ -85,39 +85,11 @@ Remove irrelevant example components (e.g., AK-specific bits) to keep things cle
 
 ---
 
-## Magazine & Guiding Spline (for weapons with external magazines)
+# Magazine & Guiding Spline (summary)
 
-**Weapon side**
+For weapons with external magazines, place a **Magazine Insertion Collision** at the magwell and add a **Magazine Guiding Movement Spline** to define the insertion path. The firearm will use overlap checks between its insertion collision and the magazine’s insertion collision to begin guiding and seating the magazine.
 
-- Place **Magazine Insertion Collision** at the magwell entrance.  
-- Create/align the **Magazine Guiding Movement Spline**:
-    1. Temporarily add a helper **Static Mesh** magazine with position set to **(0,0,0)** parented to the **Magazine Guiding Movement Spline** (represents fully seated pose).  
-    2. Move the **spline** (not the magazine) until seating is correct.  
-    3. Drag the helper magazine static mesh out along the insertion path to find first collision contact with the  **Magazine Insertion Collision**; use that offset for the second spline point of the **Magazine Guiding Movement Spline** (guide length).  
-    4. Remove the helper mesh.
-
-**Magazine asset**
-
-1. Create **Blueprint → Reality Magazine**
-2. Create **Reality Magazine Data Asset** and assign it in the BP.  
-3. Set **Base Mesh**
-4. Place **Magazine Insertion Collision** appropriately. Overlap collision will be checked between this and the corresponding **Magazine Insertion Collision** component in the firearm.
-    - When they overlap, this begins the magazine guiding process
-
-> Magazines inherit from **Reality Interactable**, so they support standard interactable behavior.
-
----
-
-## ISM Round Mechanism System
-
-The **ISM Round Mechanism System** is used to visually represent and manage rounds inside a magazine.  
-Each **Reality Magazine** can contain an **InstancedRoundGenerator** component, which inherits from Unreal’s `InstancedStaticMesh` component.
-
-This component handles **round placement** and uses instancing to render repeated meshes (the rounds) efficiently — drastically reducing draw calls and improving GPU performance.
-
-You can fine-tune parameters in the **InstancedRoundGenerator** to ensure rounds are correctly aligned and spaced inside your magazine.
-
-> Example: check out the **RealityMagazine_AK47_Example** to see a working setup of the ISM Round Mechanism.
+For full instructions (helper mesh workflow, magazine BP/data setup, and the Instanced Round Mechanism), see the dedicated Magazine Guide: **[Magazine Guide — Magazine & Guiding Spline, Magazines, and ISM Rounds](CreateMagazine.md)**.
 
 ---
 

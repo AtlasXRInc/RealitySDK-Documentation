@@ -9,6 +9,7 @@ This page contains the full workflow and reference for external magazine setup, 
 **Place the Magazine Insertion Collision**
 
 - Add a **Magazine Insertion Collision** component at the magwell entrance on the firearm. This is the collision the magazine will overlap to start guiding/seating.
+- Make sure the firearm's static mesh doesn't have a collision at the magwell enterance that would block the magazine from entering
 
 **Create / align the Magazine Guiding Movement Spline**
 

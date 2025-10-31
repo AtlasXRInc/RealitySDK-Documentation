@@ -110,7 +110,7 @@ Complex collisions are **not supported** by Reality systems.
 You can move, resize, or delete generated collision pieces to refine accuracy.
 
 !!! warning
-    Keep the magazine socket area clear so the magazine can be inserted properly.
+    For firearms, keep the magazine socket area clear so the magazine can be inserted properly.
 
 ### Creating Custom Collision Shapes
 

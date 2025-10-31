@@ -10,6 +10,13 @@
     - Otherwise, use the Data Asset corresponding to the **correct child class** (i.e RealityRoundData for RealityRound, RealityMagazineData for RealityMagazine)
         - You can look at examples `/All/EngineData/Plugins/Reality/Library/Interactable` to see how data assets are used correctly
 
+### Base Mesh & Distance Grip Indicator
+
+- Set your mesh into **Base Mesh**.
+- **Distance Grip Indicator** shows when the player is pointing at an item that can be **distance-gripped**.  
+    - **Requires at least one Animated Grip** on the item.  
+    - **Distance grip does not work** if the item only has procedural grip(s).
+
 !!! tip
     Use Reality Interactable for anything that requires **physics-based interaction**.
 

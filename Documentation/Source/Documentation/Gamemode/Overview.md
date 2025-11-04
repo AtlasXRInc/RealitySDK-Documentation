@@ -1,2 +1,3 @@
 # Overview
-Coming soon.
+
+Game Modes define the overall structure and rules of gameplay in Reality. Each game mode combines a custom `RealityGameMode` class with a `RealityGameData` asset that configures teams, voice chat, UI widgets, and gameplay phases. Phases, defined as `RealityGamePhase` assets, control how the match flows—from warm-up and active play to end-game—through actions, conditions, and transitions. Together, these systems make it easy to build everything from simple free-for-all matches to complex team-based or round-based experiences, with full control over scoring, spawning, and logic.
